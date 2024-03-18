@@ -38,7 +38,8 @@ export async function getUserById(id: string,email:string) {
             select: {
                 id: true,
                 email: true,
-                username: true
+                username: true,
+                posts: true,
             }
         });
         return user;
