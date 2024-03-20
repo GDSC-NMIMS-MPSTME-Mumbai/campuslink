@@ -9,12 +9,6 @@ import { env } from '~/env';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     try {
         // check if User is logged in or exists using jwt
-        const token: string = req.headers.authorization!.split(' ')[1]!;
-        const decoded = jwt.verify(token, env.JWT_SECRET);
-        const user = await isUser(token);
-        if (!user) {
-            throw new Error('User does not exist');
-        }
         const postData: Posts | null = await getPostById('1', '2');
         res.status(200).json(postData);
     }
