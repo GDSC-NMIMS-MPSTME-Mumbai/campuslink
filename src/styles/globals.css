@@ -1,8 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville&display=swap");
+
 html,
-body, main {
+body,
+main {
 	font-family:
 		"Inter",
 		-apple-system,
@@ -17,4 +21,10 @@ body, main {
 		"Segoe UI Emoji",
 		"Segoe UI Symbol",
 		"Noto Color Emoji";
+}
+
+@media (max-width: 334px) {
+	.date-text {
+		font-size: 10px;
+	}
 }
