@@ -15,7 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         if (!user) {
             throw new Error('User does not exist');
         }
-        const userData: User | null = await getUserById('1',"test@test.com");
+        const userData: User | null = await getUserById('2',"test2@test.com");
         res.status(200).json(userData);
     }
     catch (error) {

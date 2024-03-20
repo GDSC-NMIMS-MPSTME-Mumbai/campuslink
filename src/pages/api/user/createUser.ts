@@ -17,9 +17,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             throw new Error('User already Exists');
         }
         const userData = {
-            id: '1',
-            email: 'test@test.com',
-            username: 'test'
+            id: '2',
+            email: 'test2@test.com',
+            username: 'test2'
         }
         const createdUser: User  = await createUser(userData);
         return res.status(200).json(createdUser);
