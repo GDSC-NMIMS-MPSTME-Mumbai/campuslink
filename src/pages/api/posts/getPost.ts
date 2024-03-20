@@ -8,7 +8,6 @@ import { env } from '~/env';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     try {
-        // check if User is logged in or exists using jwt
         const postData: Posts | null = await getPostById('1', '2');
         res.status(200).json(postData);
     }
