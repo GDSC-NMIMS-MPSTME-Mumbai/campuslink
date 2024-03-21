@@ -123,7 +123,6 @@ export async function getChildComments(parentCommentId: string) {
                 postId: true,
                 userId: true,
                 parentCommentId: true,
-                // Include additional fields or related models as needed
             },
         });
         return childComments;
