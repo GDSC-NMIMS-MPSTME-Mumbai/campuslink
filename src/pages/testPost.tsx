@@ -1,4 +1,6 @@
-// pages/index.tsx
+// pages/testPost.tsx
+// File to test the post component
+
 import Head from "next/head";
 import Post from "../components/Post";
 
