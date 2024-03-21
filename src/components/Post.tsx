@@ -51,7 +51,7 @@ const Post: React.FC<PostProps> = ({
 						</span>
 					</div>
 
-					<div className="mt-3 sm:mt-4">
+					<div className="mt-3 px-10 sm:mt-4">
 						<p className="line-clamp-5 text-xs sm:text-sm md:text-base">
 							{content}
 						</p>
@@ -82,8 +82,8 @@ const Post: React.FC<PostProps> = ({
 								<Image
 									src="/assets/icons/chat.svg"
 									alt="Comment"
-									width={20}
-									height={20}
+									width={25}
+									height={25}
 								/>
 								<span className="ml-1">Comment</span>
 							</button>
@@ -91,8 +91,8 @@ const Post: React.FC<PostProps> = ({
 								<Image
 									src="/assets/icons/bookmark.svg"
 									alt="Save"
-									width={20}
-									height={20}
+									width={15}
+									height={15}
 								/>
 								<span className="ml-1">Save</span>
 							</button>
