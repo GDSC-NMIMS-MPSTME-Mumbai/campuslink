@@ -8,7 +8,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     try {
-        // Extract comment data from request body with type assertion for better type safety
         const { content, postId, parentCommentId } = req.body as { content: string; postId: string; parentCommentId?: string };
 
         // Validate the input

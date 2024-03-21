@@ -50,6 +50,7 @@ export async function getCommentsForPost(postId: string) {
                 content: true,
                 postId: true,
                 userId: true,
+                parentCommentId: true,
 
             },
         });
@@ -100,6 +101,32 @@ export async function deleteComment(commentId: string) {
                 id: commentId,
             },
         });
+    } catch (error) {
+        if (error instanceof Error) {
+            throw new Error('Error connecting to database: ' + error.message);
+        } else {
+            throw new Error('An unknown error occurred');
+        }
+    }
+}
+
+// Function to get all child comments for a specific parent comment
+export async function getChildComments(parentCommentId: string) {
+    try {
+        const childComments = await prisma.comment.findMany({
+            where: {
+                parentCommentId: parentCommentId,
+            },
+            select: {
+                id: true,
+                content: true,
+                postId: true,
+                userId: true,
+                parentCommentId: true,
+                // Include additional fields or related models as needed
+            },
+        });
+        return childComments;
     } catch (error) {
         if (error instanceof Error) {
             throw new Error('Error connecting to database: ' + error.message);
