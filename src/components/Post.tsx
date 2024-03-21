@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 import { format, parseISO } from "date-fns";
 
@@ -53,14 +53,17 @@ const Post: React.FC<PostProps> = ({
 					</p>
 
 					{imageUrl && (
-						<div className="relative mt-4 h-32 w-full sm:mt-6 sm:h-48 md:h-64">
-							<Image
-								src={imageUrl}
-								alt="Post"
-								layout="fill"
-								objectFit="cover"
-								className="rounded-lg"
-							/>
+						<div className="relative mt-4 w-full sm:mt-6">
+							<div className="relative h-32 overflow-hidden rounded-lg sm:h-48 md:h-64 ">
+								<Image
+									src={imageUrl}
+									alt="Post"
+									layout="fill"
+									objectFit="cover"
+									objectPosition="center"
+									className="rounded-lg"
+								/>
+							</div>
 						</div>
 					)}
 
