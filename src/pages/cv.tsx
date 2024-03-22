@@ -2,7 +2,11 @@ import React from 'react'
 
 const CV = () => {
   return (
-    <div>CV</div>
+    <div>
+      <h1>
+        Akshaj
+      </h1>
+    </div>
   )
 }
 
