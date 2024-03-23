@@ -1,12 +1,14 @@
 import React from "react";
-
+import Institute from "./institute";
 const Education = () => {
-	const college =
+	const educational_institution =
 		"Mukesh Patel School of Technology, Management and Engineering";
 	const degree =
 		"Bachelor of Technology in Computer Engineering(Grade: 3.5/4)";
 	const school = "Children's Academy";
 	const board = "ICSE 10th Boards (Grad: 92.83%)";
+	const date = "August, 2019 - July, 2022";
+	const date2 = "June, 2007 - May, 2019";
 
 	const items = [
 		"Machine Learning",
@@ -34,13 +36,18 @@ const Education = () => {
 				<p className="font-500 text-2xl text-[#101010] lg:text-3xl">
 					Education
 				</p>
-				<p className="pt-4 text-xl font-[400]">{college}</p>
-				<p className="text-md font-[400] italic text-[#101010] lg:text-lg">
-					{degree}
-				</p>
-				<p className="h-[1rem] self-center text-[0.89rem] text-[#606060] lg:text-[0.9rem] ">
-					August, 2019 • July, 2022
-				</p>
+				<div>
+					<p className="pt-4 text-xl font-[400]">
+						{educational_institution}
+					</p>
+					<p className="text-md font-[400] italic text-[#101010] lg:text-lg">
+						{degree}
+					</p>
+					<p className="h-[1rem] self-center text-[0.89rem] text-[#606060] lg:text-[0.9rem] ">
+						{date}
+					</p>
+				</div>
+
 				<div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
 					<p className="self-start text-[0.89rem] text-[#17B169] lg:self-center lg:text-[0.9rem]">
 						Electives:
@@ -54,7 +61,7 @@ const Education = () => {
 					{board}
 				</p>
 				<p className="h-[1rem] self-center text-[0.89rem] text-[#606060] lg:text-[0.9rem] ">
-					August, 2019 • July, 2022
+					{date2}
 				</p>
 			</div>
 		</div>
