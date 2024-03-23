@@ -1,5 +1,4 @@
 import React from "react";
-import Institute from "./institute";
 const Education = () => {
 	const educational_institution =
 		"Mukesh Patel School of Technology, Management and Engineering";
