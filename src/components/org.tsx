@@ -12,7 +12,7 @@ const Org: React.FC<OrgProps> = ({ orgName, date }) => {
     <>
     <div>
         <div className="flex justify-between content-between py-3 font-mainFont">
-            <h1 className="text-xl font-[400]">{orgName}</h1>
+            <h1 className="text-[1.1rem] lg:text-xl font-[400]">{orgName}</h1>
             <h2 className="text-[0.89rem] text-[#606060] h-[1rem] self-center lg:text-[0.9rem] ">{date}</h2>
         </div>
         <div className="flex flex-col gap-5 justify-center content-center my-2">
