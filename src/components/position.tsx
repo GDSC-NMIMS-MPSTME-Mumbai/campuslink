@@ -9,7 +9,7 @@ const Position: React.FC<OrgProps> = ({pos,description}) => {
   return (
     <>
     <div className="flex gap-5">
-      <img src="images/Arrow.svg" alt="Arrow" className="h-12 md:w-16 hidden md:block" />
+      <img src="images/Exp_arrow.svg" alt="Arrow" className="h-12 md:w-16 hidden md:block" />
       <div className="flex flex-col">
         <div className="flex gap-3">
           <img src="images/Arrow.svg" alt="" className='h-4 md:hidden '/>
