@@ -34,7 +34,7 @@ const Education = () => {
 				<p className="font-500 text-2xl text-[#101010] lg:text-3xl">
 					Education
 				</p>
-				<p className="text-xl font-[400]">{college}</p>
+				<p className="pt-4 text-xl font-[400]">{college}</p>
 				<p className="text-md font-[400] italic text-[#101010] lg:text-lg">
 					{degree}
 				</p>
@@ -48,7 +48,7 @@ const Education = () => {
 					<ListFromArray items={items} />
 				</div>
 
-				<div className="mt-4 border-t-2 border-dashed border-[#C0C0C066]"></div>
+				<div className="my-4 border-t-2 border-dashed border-[#C0C0C066]"></div>
 				<p className="text-xl font-[400]">{school}</p>
 				<p className="text-md font-[400] italic text-[#101010]">
 					{board}
