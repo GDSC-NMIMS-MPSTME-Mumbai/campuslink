@@ -1,4 +1,5 @@
 import React from "react";
+import Institute from "./institute";
 const Education = () => {
 	const educational_institution =
 		"Mukesh Patel School of Technology, Management and Engineering";
@@ -35,33 +36,25 @@ const Education = () => {
 				<p className="font-500 text-2xl text-[#101010] lg:text-3xl">
 					Education
 				</p>
-				<div>
-					<p className="pt-4 text-xl font-[400]">
-						{educational_institution}
-					</p>
-					<p className="text-md font-[400] italic text-[#101010] lg:text-lg">
-						{degree}
-					</p>
-					<p className="h-[1rem] self-center text-[0.89rem] text-[#606060] lg:text-[0.9rem] ">
-						{date}
-					</p>
-				</div>
+				<div className="px-2 lg:px-3">
+					<Institute
+						educational_institution={educational_institution}
+						degree={degree}
+						date={date}
+					/>
+					<div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
+						<p className="self-start text-[0.89rem] text-[#17B169] lg:self-center lg:text-[0.9rem]">
+							Electives:
+						</p>
+						<ListFromArray items={items} />
+					</div>
 
-				<div className="flex flex-col items-center space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
-					<p className="self-start text-[0.89rem] text-[#17B169] lg:self-center lg:text-[0.9rem]">
-						Electives:
-					</p>
-					<ListFromArray items={items} />
+					<Institute
+						educational_institution={school}
+						degree={board}
+						date={date2}
+					/>
 				</div>
-
-				<div className="my-4 border-t-2 border-dashed border-[#C0C0C066]"></div>
-				<p className="text-xl font-[400]">{school}</p>
-				<p className="text-md font-[400] italic text-[#101010]">
-					{board}
-				</p>
-				<p className="h-[1rem] self-center text-[0.89rem] text-[#606060] lg:text-[0.9rem] ">
-					{date2}
-				</p>
 			</div>
 		</div>
 	);
